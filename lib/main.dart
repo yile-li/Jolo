@@ -1,7 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:jolo/core/constants/constants.dart';
+import 'package:supabase_flutter/supabase_flutter.dart';
 
-void main() {
-  runApp(const MyApp());
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  await Supabase.initialize(
+    url: supabaseURL,
+    anonKey: supabaseAnonKey,
+  );
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {

@@ -1,0 +1,3 @@
+const String supabaseURL = "https://caivwsranwozdhpshhml.supabase.co";
+const String supabaseAnonKey =
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNhaXZ3c3JhbndvemRocHNoaG1sIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDA3NTY0NzIsImV4cCI6MjAxNjMzMjQ3Mn0.HngPnRz9tL05D9jDqvUEpnswDjR0QAW_G29JjsfG_2Q";
