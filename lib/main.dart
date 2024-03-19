@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:jolo/core/constants/constants.dart';
 import 'package:jolo/presentation/pages/home.dart';
+import 'package:jolo/presentation/pages/login.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 Future<void> main() async {
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
