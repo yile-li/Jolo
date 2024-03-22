@@ -12,6 +12,47 @@ class HomePage extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           _greetingText(),
+          SizedBox(height: 30),
+          Container(
+            child: Column(
+              // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              // crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                SizedBox(height: 30),
+                Text(
+                  "November 28, 2023", //TODO: add API to get current date
+                  style: TextStyle(
+                    color: Colors.white,
+                  ),
+                ),
+                SizedBox(
+                  width: 270,
+                  child: Text(
+                    "What do I need to change about myself?", //TODO: add API to get question
+                    textAlign: TextAlign.center,
+                    softWrap: true,
+                    style: TextStyle(
+                      fontFamily: "PlayfairDisplay",
+                      fontSize: 24,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
+              ],
+            ),
+            margin: EdgeInsets.only(left: 20, right: 20),
+            height: 313,
+            width: 390,
+            decoration: BoxDecoration(
+              // color: Colors.blueAccent,
+              border: Border.all(
+                width: 2.0,
+                color: Colors.white,
+              ),
+              borderRadius: BorderRadius.circular(30),
+            ),
+          ),
         ],
       ),
     );
